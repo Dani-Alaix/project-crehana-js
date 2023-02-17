@@ -1,0 +1,184 @@
+/*Fuentes
+-------------------------------------*/
+/*Fuentes
+-------------------------------------*/
+header {
+  display: block;
+  position: relative;
+  z-index: 99;
+  background-color: #fafafa;
+}
+header .content {
+  max-width: 1024px;
+}
+
+/*Fuentes
+-------------------------------------*/
+footer {
+  background-color: #fafafa;
+}
+footer .content {
+  max-width: 1024px;
+  margin: auto;
+}
+footer .content a {
+  padding: 0 8px;
+  color: #8C2AAD;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+footer .content a:hover {
+  color: #D155FA;
+}
+
+/*Fuentes
+-------------------------------------*/
+body {
+  background-color: #fafafa;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: #303133;
+}
+body section {
+  max-width: 1200px;
+  margin: auto;
+}
+body section.infoTesis {
+  padding: 24px 8px;
+}
+body section.infoTesis .container .title h2 {
+  text-align: center;
+}
+body section.infoTesis .container .mainContent {
+  margin-top: 2.5rem;
+}
+body section.infoTesis .container .mainContent .headInfo {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+body section.infoTesis .container .mainContent .headInfo li a {
+  font-size: 0.75rem;
+  padding: 0 1.4375rem 1.125rem 1.4375rem;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+body section.infoTesis .container .mainContent .headInfo li a:hover {
+  color: #32AD7B;
+}
+body section.infoTesis .container .mainContent .headInfo li.active a {
+  color: #32AD7B;
+  border-bottom: 2px solid #32AD7B;
+}
+body section.infoTesis .container .mainContent .contenido {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: 1px solid #d8d8d8;
+  padding: 0 2.25rem;
+}
+body section.infoTesis .container .mainContent .contenido .float {
+  display: block;
+  float: left;
+}
+body section.infoTesis .container .mainContent .contenido > div {
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body section.infoTesis .container .mainContent .contenido .active {
+  display: block;
+}
+body section.infoTesis .container .mainContent .contenido .col {
+  width: 50%;
+}
+body section.infoTesis .container .mainContent .contenido .col.left {
+  overflow: hidden;
+}
+body section.infoTesis .container .mainContent .contenido .col .slider {
+  width: 300%;
+  display: flex;
+}
+body section.infoTesis .container .mainContent .contenido .col .slider .slide {
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+body section.infoTesis .container .mainContent .contenido .col .slider .slide.foto1 {
+  background-image: url("../../images/silencio.jpg");
+}
+body section.infoTesis .container .mainContent .contenido .col .slider .slide.foto2 {
+  background-image: url("../../images/maxresdefault.jpg");
+}
+body section.infoTesis .container .mainContent .contenido .col .slider .slide.foto3 {
+  background-image: url("../../images/caged.png");
+}
+body section.infoTesis .container .mainContent .contenido .col.text {
+  width: 70%;
+}
+body section.infoTesis .container .mainContent .contenido .col .overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(250, 253, 255, 0.4);
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body section.infoTesis .container .mainContent .contenido .col .overlay:hover {
+  opacity: 1;
+}
+body section.infoTesis .container .mainContent .contenido .col .overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5625rem;
+}
+body section.infoTesis .container .mainContent .contenido .col.photo1, body section.infoTesis .container .mainContent .contenido .col.photo2 {
+  width: 30%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+body section.infoTesis .container .mainContent .contenido .col.photo1 {
+  background-image: url("../../images/partitura_sonora.jpg");
+}
+body section.infoTesis .container .mainContent .contenido .col.photo2 {
+  background-image: url("../../images/sonorama.jpg");
+}
+
+.imagen-modal {
+  width: 90%;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+}
+
+i#cerrar_modal {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  font-size: 2.25rem;
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.75rem 0.875rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
