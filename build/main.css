@@ -115,13 +115,13 @@ body section.infoTesis .container .mainContent .contenido .col .slider .slide {
   background-position: center;
 }
 body section.infoTesis .container .mainContent .contenido .col .slider .slide.foto1 {
-  background-image: url("../../images/silencio.jpg");
+  background-image: url("../images/silencio.jpg");
 }
 body section.infoTesis .container .mainContent .contenido .col .slider .slide.foto2 {
-  background-image: url("../../images/maxresdefault.jpg");
+  background-image: url("../images/maxresdefault.jpg");
 }
 body section.infoTesis .container .mainContent .contenido .col .slider .slide.foto3 {
-  background-image: url("../../images/caged.png");
+  background-image: url("../images/caged.png");
 }
 body section.infoTesis .container .mainContent .contenido .col.text {
   width: 70%;
@@ -154,10 +154,10 @@ body section.infoTesis .container .mainContent .contenido .col.photo1, body sect
   background-position: center;
 }
 body section.infoTesis .container .mainContent .contenido .col.photo1 {
-  background-image: url("../../images/partitura_sonora.jpg");
+  background-image: url("../images/partitura_sonora.jpg");
 }
 body section.infoTesis .container .mainContent .contenido .col.photo2 {
-  background-image: url("../../images/sonorama.jpg");
+  background-image: url("../images/sonorama.jpg");
 }
 
 .imagen-modal {
