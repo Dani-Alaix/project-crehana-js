@@ -1,0 +1,158 @@
+@import 'colors';
+@import 'breakpoints';
+
+body {
+    background-color: $background;
+    font-size: 16px;
+	font-family: $fuente-principal;
+	color: $gray-dark;
+    section {
+        max-width: 1200px;
+        margin: auto;
+
+        &.infoTesis {
+            padding: 24px 8px;
+            .container {
+                .title {
+                    h2 {
+                        text-align: center;
+                    }
+                }
+                .mainContent {
+                    margin-top: 2.5rem;
+                    .headInfo {
+                        font-weight: 600;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        list-style: none;
+                        display: flex;
+                        justify-content: center;
+                        li {
+                            a {
+                                font-size: 0.75rem;
+                                padding: 0 1.4375rem 1.125rem 1.4375rem;
+                                display: block;
+                                cursor: pointer;
+                                -webkit-transition: all .3s ease;
+                                -o-transition: all .3s ease;
+                                transition: all .3s ease;
+                                border-bottom: 2px solid transparent;
+                                &:hover {
+                                    color: $green;
+                                }
+                            }
+                            &.active {
+                                a {
+                                    color: $green;
+                                    border-bottom: 2px solid $green;
+                                }
+                            }
+                        }
+                    }
+                    .contenido {
+                        max-width: 50rem;
+                        margin: 0 auto;
+                        margin-top: 16px;
+                        border: 1px solid $gray-light;
+                        padding: 0 2.25rem;
+                        .float {
+                            display: block;
+                            float: left;
+                        } 
+                        >div {
+                            display: none;
+                            -webkit-transition: all .3s ease;
+                            -o-transition: all .3s ease;
+                            transition: all .3s ease;
+                        }
+                        .active {
+                            display: block;
+                        }
+                        .col {
+                            width: 50%;                                                       
+                            &.left {
+                                overflow: hidden;
+                            }
+                            .slider {
+                                width: 300%;
+                                display: flex;
+                                .slide {
+                                    width: 100%;
+                                    min-height: 400px;
+                                    background-size: cover;
+                                    background-position: center;
+                                    &.foto1 {
+                                        background-image: url('../../images/silencio.jpg');
+                                    }
+                                    &.foto2 {
+                                        background-image: url('../../images/maxresdefault.jpg');
+                                    }
+                                    &.foto3 {
+                                        background-image: url('../../images/caged.png');
+                                    }
+                                }
+                            }
+                            &.text {
+                                width: 70%;
+                            }
+
+                            .overlay{
+                                opacity: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(250, 253, 255, 0.4);
+                                position: relative;
+                                cursor: pointer;
+                                -webkit-transition: all .3s ease;
+                                -o-transition: all .3s ease;
+                                transition: all .3s ease;
+                                &:hover{
+                                    opacity: 1;
+                                }
+                                i{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    font-size: 1.5625rem;
+                                }
+                            }
+                            &.photo1, &.photo2 {
+                                width: 30%;
+                                height: 300px;
+                                background-size: cover;
+                                background-position: center;
+                            }
+                            &.photo1 {                                
+                                background-image: url('../../images/partitura_sonora.jpg');
+                            }
+                            &.photo2 {
+                                background-image: url('../../images/sonorama.jpg');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.imagen-modal {
+	width: 90%;
+	max-width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity .5s ease;
+}
+i#cerrar_modal{
+	position: absolute;
+	top: 2%;
+	right: 1%;
+	font-size: 2.25rem;
+	background-color: $white;
+	display: inline-block;
+	padding: 0.75rem 0.875rem;
+	cursor: pointer;
+}

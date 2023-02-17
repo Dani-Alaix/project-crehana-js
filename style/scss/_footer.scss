@@ -1,0 +1,19 @@
+@import 'colors';
+
+footer {
+    background-color: $background;
+    .content {
+        max-width: 1024px;
+        margin: auto;
+        a{
+			padding: 0 8px;
+			color: $purple-dark;
+			-webkit-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+			&:hover{
+				color: $purple;
+			}
+		}
+    }
+}
